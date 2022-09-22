@@ -2,9 +2,9 @@ rabbitmq:
   test:
     username: username
     password: password
-    host: 192.168.56.101
+    host: localhost
     port: 5672
-    virtualhost: revi.host
+    virtualhost: revi.vhost
     routeKey: sample.route
     exchangeName: sample.exchange
     queueName: testQueue
