@@ -29,6 +29,12 @@ public class RabbitMqApplication {
 		testTemplate.convertAndSend(SampleMessage.of("first message"));
 		return "Success";
 	}
+	@GetMapping("/vhost")
+	public String inQueuing() {
+		testTemplate.convertAndSend(SampleMessage.of("second message"));
+		return "Not fail";
+	}
+
 	@Data
 	@AllArgsConstructor(staticName = "of")
 	@NoArgsConstructor

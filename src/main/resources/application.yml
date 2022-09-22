@@ -2,11 +2,11 @@ rabbitmq:
   test:
     username: username
     password: password
-    host: localhost
+    host: 192.168.56.101 #서버의 ip를 적어야 한다 (같은 로컬호스트라면 localhost겠지만 docker를 사용하는 순간 ip에 대해 신경써야한다)
     port: 5672
-    virtualhost: revi.vhost
-    routeKey: sample.route
-    exchangeName: sample.exchange
+    virtualhost: vhost
+    routeKey: test.route
+    exchangeName: test.exchange
     queueName: testQueue
     deadLetterExchange: dead.letter.exchange
     deadLetterRouteKey: dead.letter.route
